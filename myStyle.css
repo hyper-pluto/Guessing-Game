@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  font-family: Audiowide;
+}
+
+body {
+  background: rgb(1, 11, 18);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 11, 18, 1) 0%,
+    rgba(12, 137, 0, 1) 50%,
+    rgba(1, 11, 18, 1) 100%
+  );
+}
+
+header {
+  position: relative;
+  border-bottom: 1rem solid #9cff00;
+  color: black;
+  text-align: center;
+}
+
+p {
+  color: black;
+  text-shadow: 0 0 5px rgb(191, 250, 176);
+}
+
+.message {
+  text-shadow: 0 0 5px #ff9191;
+}
+
+.p1 {
+  font: italic 2rem cursive;
+  text-shadow: 0 0 14px rgb(28, 32, 25);
+  padding: 0 0 2.8rem 0;
+}
+
+.h1 {
+  font-size: 6rem;
+  text-shadow: 0 0 10px rgb(191, 250, 135);
+}
+
+.numbers {
+  background: #9cff00;
+  color: black;
+  text-shadow: 0 0 4px rgb(255, 0, 0);
+  font: bold 3rem audiowide;
+  text-align: center;
+  padding: 2rem 0rem;
+  width: 15rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.newbtn {
+  background-color: #0c8900;
+  color: black;
+  font-size: 2.5rem;
+  text-shadow: 0 0 5px rgb(191, 250, 176);
+  margin: 40px 0 0 10%;
+}
+.newbtn:hover,
+.btn:hover {
+  background-color: #1c1c1c;
+  color: #12a801;
+  text-shadow: 0 0 2px rgb(191, 250, 176);
+}
+
+.btn {
+  background-color: #0c8900;
+  color: black;
+  font-size: 3rem;
+  text-shadow: 0 0 5px rgb(191, 250, 176);
+}
+
+.guess {
+  background-color: #0c8900;
+  color: black;
+  font-size: 3rem;
+  width: 10rem;
+  text-align: center;
+  margin-left: 10%;
+  text-shadow: 0 0 5px rgb(191, 250, 176);
+}
+
+.main::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.leftSide,
+.rightSide {
+  float: left;
+  padding: 10px;
+  width: 50%;
+  margin-top: 4rem;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 840px) {
+  .guess,
+  .btn {
+    width: 90%;
+    margin: 10px 0px 10px 5px;
+  }
+  .message,
+  .labelScore,
+  .labelHigh,
+  .highscore {
+    font-size: 1.7rem;
+    margin: 0 0 20px 0;
+  }
+  .h1 {
+    font-size: 4rem;
+  }
+  .newbtn {
+    font-size: 2rem;
+    margin: 55px 0 0 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .p1 {
+    font-size: 1rem;
+    margin: 0px 0px 30px 0px;
+    text-shadow: 0 0 10px rgb(191, 250, 176);
+  }
+  .message,
+  .labelScore,
+  .labelHigh,
+  .highscore {
+    font-size: 1.3rem;
+    margin: 15px 0 20px 0;
+  }
+  .newbtn {
+    font-size: 1.5rem;
+    margin: 58px 0 0 5px;
+  }
+}

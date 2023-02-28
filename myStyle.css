@@ -139,4 +139,7 @@ p {
     font-size: 1.5rem;
     margin: 58px 0 0 5px;
   }
+  .btn {
+    font-size: 2rem;
+  }
 }
